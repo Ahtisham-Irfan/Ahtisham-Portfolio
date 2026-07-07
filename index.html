@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahtisham Irfan — ahtisham.py</title>
+<meta name="description" content="Muhammad Ahtisham Irfan — Frontend & AI Developer portfolio">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="titlebar">
+  <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+  <span class="titlebar-name">ahtisham-irfan — portfolio — main</span>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle file explorer" aria-expanded="false">☰ files</button>
+</div>
+
+<div class="workspace">
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar" id="sidebar" aria-label="Section navigation">
+    <div class="sidebar-label">Explorer</div>
+    <button class="tree-item active" data-tab="about"><span class="tree-icon">📄</span>About</button>
+    <button class="tree-item" data-tab="skills"><span class="tree-icon">📄</span>Skills</button>
+    <button class="tree-item" data-tab="projects"><span class="tree-icon">📄</span>Projects</button>
+    <button class="tree-item" data-tab="experience"><span class="tree-icon">📄</span>Experience</button>
+    <button class="tree-item" data-tab="contact"><span class="tree-icon">📄</span>Contact</button>
+    <div class="sidebar-footer">
+      <a href="https://linkedin.com/in/ahtisham-irfan" target="_blank" rel="noopener">↳ linkedin.com/in/ahtisham-irfan</a>
+      <a href="mailto:ahtishamirfan17@gmail.com">↳ ahtishamirfan17@gmail.com</a>
+      <a href="tel:+923079783046">↳ +92 307 9783 046</a>
+    </div>
+  </nav>
+
+  <!-- EDITOR -->
+  <main class="editor">
+    <div class="tabbar" role="tablist" aria-label="Open files">
+      <button class="tab active" data-tab="about" role="tab" aria-selected="true">about<span class="dirty"></span></button>
+      <button class="tab" data-tab="skills" role="tab" aria-selected="false">skills</button>
+      <button class="tab" data-tab="projects" role="tab" aria-selected="false">projects</button>
+      <button class="tab" data-tab="experience" role="tab" aria-selected="false">experience</button>
+      <button class="tab" data-tab="contact" role="tab" aria-selected="false">contact</button>
+    </div>
+
+    <div class="pane-wrap">
+
+      <!-- ABOUT -->
+      <section class="pane active" id="about" role="tabpanel">
+        <div class="hero-tag">// about</div>
+        <h1 class="headline"><span class="kw">class</span> <span class="fn">AhtishamIrfan</span>:</h1>
+        <div class="subline" id="typeTarget"></div>
+
+        <div class="docstring">
+          Computer Science graduate (<b>GPA 3.32/4.0</b>, 2026) with 3+ years building
+          production-grade software — from responsive frontends and REST API integrations
+          to AI-powered desktop systems and NLP tools. I work independently, ship fast,
+          and enjoy the space where clean interfaces meet intelligent systems.
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-solid" href="mailto:ahtishamirfan17@gmail.com">get_in_touch()</a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/ahtisham-irfan" target="_blank" rel="noopener">view_linkedin()</a>
+        </div>
+
+        <div class="stat-row">
+          <div><div class="stat-num">3+</div><div class="stat-label">years experience</div></div>
+          <div><div class="stat-num">6</div><div class="stat-label">shipped projects</div></div>
+          <div><div class="stat-num">3.31</div><div class="stat-label">GPA / 4.0</div></div>
+          <div><div class="stat-num">6</div><div class="stat-label">certifications</div></div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="pane" id="skills" role="tabpanel">
+        <div class="hero-tag">// skills</div>
+        <div class="section-title">Imports</div>
+        <div class="section-sub">everything currently loaded in the toolbox</div>
+
+        <div class="import-block">
+          <div class="import-head">from languages import *</div>
+          <div class="chip-row">
+            <span class="chip">Python</span><span class="chip">JavaScript</span>
+            <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">SQL</span>
+          </div>
+        </div>
+
+        <div class="import-block">
+          <div class="import-head">from ai_ml import *</div>
+          <div class="chip-row">
+            <span class="chip">Scikit-learn</span><span class="chip">OpenCV</span>
+            <span class="chip">NumPy</span><span class="chip">Pandas</span>
+            <span class="chip">NLTK / spaCy</span><span class="chip">Computer Vision</span>
+            <span class="chip">Face Recognition</span><span class="chip">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <div class="import-block">
+          <div class="import-head">from web_dev import *</div>
+          <div class="chip-row">
+            <span class="chip">Responsive Design</span><span class="chip">REST APIs</span>
+            <span class="chip">Cross-browser Compat</span><span class="chip">Flask</span><span class="chip">JSON</span>
+          </div>
+        </div>
+
+        <div class="import-block">
+          <div class="import-head">from databases import *</div>
+          <div class="chip-row">
+            <span class="chip">MySQL</span><span class="chip">SQLite</span>
+            <span class="chip">Schema Design</span><span class="chip">Query Optimisation</span>
+          </div>
+        </div>
+
+        <div class="import-block">
+          <div class="import-head">from design import *</div>
+          <div class="chip-row">
+            <span class="chip">Photoshop</span><span class="chip">Illustrator</span>
+            <span class="chip">Canva</span><span class="chip">Usability Testing</span><span class="chip">Design Systems</span>
+          </div>
+        </div>
+
+        <div class="import-block">
+          <div class="import-head">from tooling import *</div>
+          <div class="chip-row">
+            <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span>
+            <span class="chip">Chrome DevTools</span><span class="chip">Agile</span><span class="chip">Code Review</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="pane" id="projects" role="tabpanel">
+        <div class="hero-tag">// projects</div>
+        <div class="section-title">git log --oneline --graph</div>
+        <div class="section-sub">click a commit to expand · six shipped builds</div>
+
+        <div class="commit" data-c="1">
+          <div class="commit-hash">1</div>
+          <div>
+            <div class="commit-msg">Smart Campus AI — Intelligent campus automation</div>
+            <div class="commit-meta">2025–2026 · final year project · <span class="commit-toggle">click to expand ▾</span></div>
+            <div class="commit-body">
+              <ul>
+                <li>Multi-module platform: face-recognition attendance, real-time classroom emotion detection, NLP document summariser</li>
+                <li>AI study planner generating personalised schedules from subjects, topics and deadlines</li>
+                <li>Automated resume screening module plus analytics dashboard with full DB architecture</li>
+              </ul>
+              <div class="chip-row">
+                <span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">Scikit-learn</span><span class="chip">NLTK</span><span class="chip">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="commit" data-c="2">
+          <div class="commit-hash">2</div>
+          <div>
+            <div class="commit-msg">Smart Pharmacy Suite — desktop POS & inventory system</div>
+            <div class="commit-meta">2024 · <span class="commit-toggle">click to expand ▾</span></div>
+            <div class="commit-body">
+              <ul>
+                <li>Barcode-based product search with near-expiry discount engine</li>
+                <li>Drug-drug interaction (DDI) safety alerts and real-time inventory tracking</li>
+                <li>Automated receipt generation with full transaction history and audit trail</li>
+              </ul>
+              <div class="chip-row"><span class="chip">Python</span><span class="chip">Tkinter</span><span class="chip">SQLite</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="commit" data-c="3">
+          <div class="commit-hash">3</div>
+          <div>
+            <div class="commit-msg">AI Document Summariser + Smart Study Planner</div>
+            <div class="commit-meta">2024 · <span class="commit-toggle">click to expand ▾</span></div>
+            <div class="commit-body">
+              <ul>
+                <li>NLP tool condensing lengthy academic documents into structured, topic-organised summaries</li>
+                <li>Scheduling engine generating personalised weekly plans from deadline inputs</li>
+              </ul>
+              <div class="chip-row"><span class="chip">Python</span><span class="chip">NLTK / spaCy</span><span class="chip">Pandas</span><span class="chip">SQLite</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="commit" data-c="4">
+          <div class="commit-hash">4</div>
+          <div>
+            <div class="commit-msg">Face Recognition Attendance System</div>
+            <div class="commit-meta">2023 · <span class="commit-toggle">click to expand ▾</span></div>
+            <div class="commit-body">
+              <ul>
+                <li>Real-time attendance via live webcam feed with face detection and recognition</li>
+                <li>Eliminated manual roll-call, produced auditable digital records</li>
+              </ul>
+              <div class="chip-row"><span class="chip">Python</span><span class="chip">OpenCV</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="commit" data-c="5">
+          <div class="commit-hash">5</div>
+          <div>
+            <div class="commit-msg">Weather Dashboard — API-based responsive web app</div>
+            <div class="commit-meta">2023 · <span class="commit-toggle">click to expand ▾</span></div>
+            <div class="commit-body">
+              <ul>
+                <li>Real-time weather app consuming a public REST API</li>
+                <li>Displays temperature, humidity, wind speed and conditions, fully mobile-first</li>
+              </ul>
+              <div class="chip-row"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">REST API</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="commit" data-c="6">
+          <div class="commit-hash">6</div>
+          <div>
+            <div class="commit-msg">Student & Result Management System (SRMS)</div>
+            <div class="commit-meta">2023 · <span class="commit-toggle">click to expand ▾</span></div>
+            <div class="commit-body">
+              <ul>
+                <li>Desktop app managing student records, courses and results</li>
+                <li>Complete CRUD operations, role-based authentication, structured SQL layer</li>
+              </ul>
+              <div class="chip-row"><span class="chip">Python</span><span class="chip">Tkinter</span><span class="chip">SQLite</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="pane" id="experience" role="tabpanel">
+        <div class="hero-tag">// experience</div>
+        <div class="section-title">Work history</div>
+        <div class="section-sub">chronological, most recent first</div>
+
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-role">UI/UX Design Intern — Freelance / Design Agency</div>
+            <div class="tl-meta">Jun 2023 – Present · Remote / Pakistan</div>
+            <ul>
+              <li>Designed logos, UI elements and brand identity assets across multiple client projects</li>
+              <li>Ran user research and competitive analysis, iterating on structured usability feedback</li>
+              <li>Built reusable component libraries and design systems for consistent brand application</li>
+            </ul>
+          </div>
+          <div class="tl-item">
+            <div class="tl-role">Frontend Web Development Intern — Web Development Agency</div>
+            <div class="tl-meta">Okara, Pakistan · On-site</div>
+            <ul>
+              <li>Built pixel-perfect, cross-device responsive interfaces for immigration-sector clients</li>
+              <li>Integrated REST APIs for real-time data, cutting manual data entry by ~60%</li>
+              <li>Improved Core Web Vitals via lazy loading and code splitting</li>
+              <li>Implemented WCAG 2.1 accessibility standards across deliverables</li>
+              <li>Worked Agile/Scrum with Git & GitHub — sprint planning, PR reviews, iterative delivery</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="req-block">
+          <div class="section-title" style="font-size:19px;">requirements.txt</div>
+          <div class="req-line"><span>BS Computer Science</span><span class="v">— University of Agriculture Faisalabad, 2022–2026</span></div>
+          <div class="req-line"><span>Prompt Engineering Basics</span><span class="v">— IBM / Coursera, 2025</span></div>
+          <div class="req-line"><span>Social Media Data Analytics</span><span class="v">— U. of Washington / Coursera, 2025</span></div>
+          <div class="req-line"><span>Social Media Advertising</span><span class="v">— U. of Colorado Boulder / Coursera, 2025</span></div>
+          <div class="req-line"><span>Branding with AI</span><span class="v">— Expert Ease Education / Udemy, 2025</span></div>
+          <div class="req-line"><span>Graphic Design / UI/UX (Grade A)</span><span class="v">— NAVTTC, 2023</span></div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="pane" id="contact" role="tabpanel">
+        <div class="hero-tag">// contact.py</div>
+        <div class="section-title">Let's build something</div>
+        <div class="section-sub">open to software engineering, AI/data roles, and graduate programs</div>
+
+        <div class="term">
+          <div><span class="prompt">➜</span> <span class="path">~/ahtisham</span> echo $EMAIL</div>
+          <div>ahtishamirfan17@gmail.com</div>
+          <div style="margin-top:10px;"><span class="prompt">➜</span> <span class="path">~/ahtisham</span> echo $PHONE</div>
+          <div>+92 307 9783 046</div>
+          <div style="margin-top:10px;"><span class="prompt">➜</span> <span class="path">~/ahtisham</span> echo $LOCATION</div>
+          <div>Okara, Punjab, Pakistan</div>
+          <div style="margin-top:10px;"><span class="prompt">➜</span> <span class="path">~/ahtisham</span> <span class="cursor"></span></div>
+        </div>
+
+        <div class="contact-links">
+          <a class="btn btn-solid" href="mailto:ahtishamirfan17@gmail.com">Send an email</a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/ahtisham-irfan" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn-ghost" href="tel:+923079783046">Call</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<div class="statusbar">
+  <span id="statusLeft">● main — no conflicts</span>
+  <span id="statusRight">Ln 1, Col 1 · UTF-8 · Python</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
